@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>{{title}} {{numberLesson}}!</h1>
+  <ul>
+    <li *ngFor="let task of tasks">
+      {{task}}
+    </li>
+  </ul>
+  <app-counter></app-counter>
+  <app-counter></app-counter>
+  
+  <button (click)="dropdown()">Dropdown</button>
+  <p *ngIf="state">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat velit nihil eligendi debitis officia natus adipisci perspiciatis maiores eveniet at iure dolores, ea beatae, aut dolore repudiandae optio error?</p>
+</div>
